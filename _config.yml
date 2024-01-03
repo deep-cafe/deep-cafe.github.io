@@ -21,9 +21,9 @@
 title: Deep Cafe
 email: hello@deep.cafe
 description: ""
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: / # the subpath of your site, e.g. /blog
 domain: deep.cafe
-url: "https://www.deep.cafe" # the base hostname & protocol for your site, e.g. http://example.com
+url: https://www.deep.cafe # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 theme: minima
@@ -48,3 +48,6 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+minima:
+  skin: dark
