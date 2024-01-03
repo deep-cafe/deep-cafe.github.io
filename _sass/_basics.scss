@@ -1,0 +1,47 @@
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-family);
+}
+
+h1 {
+  margin: 2rem 0;
+  font-size: 4em;
+  line-height: 1;
+  letter-spacing: -1px;
+  color: var(--color-primary);
+}
+
+h2 {
+  margin: 2rem 0;
+  font-size: 4em;
+  line-height: 1;
+  letter-spacing: -1px;
+  color: var(--color-secondary);
+}
+
+h3 {
+  margin: 2rem 0;
+  font-size: 4em;
+  line-height: 1;
+  letter-spacing: -1px;
+  color: var(--color-tertiary);
+}
+
+h4 {
+  margin: 2rem 0;
+  font-size: 4em;
+  line-height: 1;
+  letter-spacing: -1px;
+  color: var(--color-quaternary);
+}
