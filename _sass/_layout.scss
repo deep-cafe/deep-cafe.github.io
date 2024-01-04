@@ -26,6 +26,41 @@
   }
 }
 
+.post-teaser {
+  display: flex;
+  gap: 2rem;
+  align-items: baseline;
+
+  a {
+    color: var(--color-primary);
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+
+  &-date {
+    flex-shrink: 0;
+    color: var(--color-gray);
+    font-size: 1rem;
+
+    &::after {
+      content: "·";
+      position: relative;
+      height: 1px;
+      top: 1px;
+      right: -1.1rem;
+      font-size: 1.5rem;
+    }
+  }
+
+  &-title {
+    font-size: 1.15rem;
+  }
+}
+
 .blog-content {
   font-size: 1.1875rem;
   padding-bottom: 12rem;

@@ -6,4 +6,4 @@ domain: deep.cafe
 url: https://www.deep.cafe
 
 permalink: /:categories/:title
-date_format: "%e %b %Y"
+date_format: "%d %b %Y"
