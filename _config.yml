@@ -1,9 +1,10 @@
 title: Deep Cafe
 email: hello@deep.cafe
-description: ""
+description: "Powered by curiosity and intrigue."
 
 domain: deep.cafe
 url: https://www.deep.cafe
 
 permalink: /:categories/:title
 date_format: "%d %b %Y"
+excerpt_separator: <!--more-->

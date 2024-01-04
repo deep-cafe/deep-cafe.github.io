@@ -11,12 +11,9 @@
     <meta property="article:author" content="Deep Cafe" />
     <meta property="og:site_name" content="Deep Cafe" />
     <meta property="og:type" content="article" />
-    <meta
-    property="og:title"
-    content="React re-renders guide: preventing unnecessary re-renders"
-    />
+    <meta property="og:title" content="{{ page.title }}" />
     <meta property="og:url" content="{{ page.url | absolute_url }}" />
-    <meta property="og:description" content="{{ page.description }}" />
+    <meta property="og:description" content="{{ page.excerpt | strip_html }}" />
     <!-- <meta property="og:image" content=""> -->
   {% endif %}
 
@@ -26,7 +23,4 @@
 
   <link rel="icon" type="image/png" href="{{ "/assets/icons/favicon.png" | relative_url }}" />
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
-
-
-  {% include meta.html %}
 </head>
