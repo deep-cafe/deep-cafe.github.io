@@ -1,0 +1,32 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=1">
+  <meta name="theme-color" content="#0e141b">
+
+  <meta name="author" content="Deep Cafe">
+  <meta name="description" content="{{ site.description }}">
+
+  {% if include.is_post %}
+    <meta property="article:published_time" content="{{ page.date }}" />
+    <meta property="article:author" content="Deep Cafe" />
+    <meta property="og:site_name" content="Deep Cafe" />
+    <meta property="og:type" content="article" />
+    <meta
+    property="og:title"
+    content="React re-renders guide: preventing unnecessary re-renders"
+    />
+    <meta property="og:url" content="{{ page.url | absolute_url }}" />
+    <meta property="og:description" content="{{ page.description }}" />
+    <!-- <meta property="og:image" content=""> -->
+  {% endif %}
+
+  <meta name="robots" content="index,follow,max-image-preview:large">
+
+  <title>{{ page.title }} — {{ site.title }}</title>
+
+  <link rel="icon" type="image/png" href="{{ "/assets/icons/favicon.png" | relative_url }}" />
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+
+
+  {% include meta.html %}
+</head>
