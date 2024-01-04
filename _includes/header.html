@@ -1,7 +1,13 @@
 <header class="top-header">
-  <div class="container">
+  <div class="container space-between">
     <div>
-      <a rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+      <a class="logo-link" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
     </div>
+
+    {% if include.with_home %}
+      <div>
+        <a class="nav-link" href="{{ "/" | relative_url }}">Home</a>
+      </div>
+    {% endif %}
   </div>
 </header>

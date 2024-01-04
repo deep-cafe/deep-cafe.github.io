@@ -3,7 +3,7 @@
   padding-bottom: 2.5rem;
   font-size: 1.1875rem;
 
-  a {
+  .logo-link {
     color: var(--color-text-alt);
     text-decoration: none;
 
@@ -11,6 +11,18 @@
     &:focus {
       text-decoration: underline;
     }
+  }
+}
+
+.nav-link {
+  color: var(--color-gray);
+  font-size: 1rem;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: var(--color-text-alt);
+    text-decoration: underline;
   }
 }
 
