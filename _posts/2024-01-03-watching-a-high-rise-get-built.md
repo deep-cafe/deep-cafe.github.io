@@ -3,6 +3,9 @@ layout: post
 title: "What I learned watching a high rise get built outside my apartment window"
 date: 2024-01-03
 categories: blog
+tags:
+  - foo
+  - bar
 ---
 
 ## Subheading one: this is a long title that wraps onto a new line so that I can style it properly

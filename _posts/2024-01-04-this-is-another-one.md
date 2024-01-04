@@ -3,6 +3,9 @@ layout: post
 title: "This is another one"
 date: 2024-01-04
 categories: blog
+tags:
+  - foo
+  - baz
 ---
 
 ## Subheading one: this is a long title that wraps onto a new line so that I can style it properly
