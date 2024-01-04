@@ -1,8 +1,4 @@
 ---
-layout: default
-title: "Happy Jekylling!"
+layout: home
+title: "Welcome to the Deep Cafe"
 ---
-
-# You're ready to go!
-
-Start developing your Jekyll website.
