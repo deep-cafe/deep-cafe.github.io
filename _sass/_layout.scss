@@ -21,7 +21,7 @@
 
   &-image {
     position: relative;
-    bottom: 1px;
+    bottom: 2px;
   }
 }
 
@@ -38,9 +38,15 @@
 }
 
 .post-teaser {
-  display: flex;
-  gap: 2rem;
-  align-items: baseline;
+  & + .post-teaser {
+    margin-top: 0.25rem;
+  }
+
+  &-body {
+    display: flex;
+    gap: 2rem;
+    align-items: baseline;
+  }
 
   a {
     color: var(--color-primary);
@@ -53,22 +59,29 @@
   }
 
   &-date {
+    min-width: 100px;
     flex-shrink: 0;
     color: var(--color-gray);
     font-size: 1rem;
 
-    &::after {
-      content: "·";
-      position: relative;
-      height: 1px;
-      top: 1px;
-      right: -1.1rem;
-      font-size: 1.5rem;
+    &-today {
+      color: var(--color-quaternary);
     }
   }
 
   &-title {
+    position: relative;
     font-size: 1.15rem;
+
+    &::before {
+      position: absolute;
+      content: "·";
+      height: 1px;
+      top: 14px;
+      left: -22px;
+      font-size: 1.5rem;
+      line-height: 0;
+    }
   }
 }
 

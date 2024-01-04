@@ -13,9 +13,7 @@
 
             <ul>
             {% for post in category.last %}
-              <li>
-                {% include post-teaser.html post=post %}
-              </li>
+              {% include post-teaser.html post=post %}
             {% endfor %}
             </ul>
           </section>
