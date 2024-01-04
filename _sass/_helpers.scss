@@ -34,7 +34,7 @@
     width: 100%;
   }
 
-  span {
+  & > span {
     background: var(--color-background);
     padding: 1rem;
     margin-left: 1.63rem;
