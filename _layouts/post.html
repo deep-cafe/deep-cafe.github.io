@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  {% include head.html is_post=true %}
+  <body>
+    {% include header.html with_home=true %}
+
+    <main class="container blog-content">
+      <header>
+        <h1>{{ page.title }}</h1>
+
+        <div class="text-meta text-line-through">
+          <span>
+            <time datetime="{{ page.date }}" itemprop="datePublished">
+              {{ page.date | date: site.date_format }}
+            </time>
+          </span>
+        </div>
+      </header>
+
+      {{ content }}
+    </main>
+
+    {% include footer.html %}
+  </body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  {% include head.html is_post=true %}
+  <body>
+    {% include header.html %}
+
+    <main class="container">
+      {{ content }}
+    </main>
+
+    {% unless page.hide-footer %}
+      {% include footer.html %}
+    {% endunless %}
+  </body>
+</html>
