@@ -70,16 +70,23 @@ h6 {
 
 a {
   color: var(--color-tertiary);
+  text-decoration: none;
   text-underline-offset: 4px;
-  text-decoration-thickness: 1px;
+  text-decoration-thickness: 0.5px !important;
 
   &:hover, &:focus {
+    text-decoration: underline;
     color: var(--color-tertiary-alt);
   }
 }
 
 small {
   font-size: 0.8rem;
+}
+
+ul.with-bullets {
+  list-style: disc;
+  padding-left: 16px;
 }
 
 // TODO: blockquote
