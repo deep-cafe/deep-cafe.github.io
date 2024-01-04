@@ -9,7 +9,7 @@
       {% for category in site.categories %}
         <li>
           <section>
-            <h2>{{ category | first }}</h2>
+            <h2>{{ category | first | capitalize }}</h2>
 
             <ul>
             {% for post in category.last %}

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "6 Months: What I learned watching a high rise get built outside my condo window"
+title: "What I learned watching a high rise get built outside my apartment window"
 date: 2024-01-03
 categories: blog
 ---
