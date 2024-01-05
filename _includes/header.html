@@ -5,10 +5,12 @@
       <a class="top-logo-link" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
     </div>
 
-    {% if include.with_home %}
-      <div>
-        <a class="nav-link" href="{{ "/" | relative_url }}">Home</a>
-      </div>
-    {% endif %}
+    <nav>
+      <ul>
+        {% unless page.layout == "home" %}
+        <li><a class="nav-link" href="{{ "/" | relative_url }}">Home</a></li>
+        {% endunless %}
+      </ul>
+    </nav>
   </div>
 </header>

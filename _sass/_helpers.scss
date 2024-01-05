@@ -14,14 +14,12 @@
   height: 3rem;
 }
 
-.explicit-link {
-  color: var(--color-tertiary);
-  text-decoration: underline;
+.muted {
+  color: var(--color-gray-alt);
+}
 
-  &:hover,
-  &:focus {
-    color: var(--color-tertiary-alt);
-  }
+.explicit-link {
+  text-decoration: underline;
 }
 
 .space-between {
