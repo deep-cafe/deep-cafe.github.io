@@ -36,7 +36,8 @@
 
   & > span {
     background: var(--color-background);
-    padding: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     margin-left: 1.63rem;
   }
 }
@@ -45,7 +46,20 @@
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .text-meta {
   color: var(--color-gray);
   font-size: 1rem;
+}
+
+.text-meta-alt {
+  color: var(--color-gray-alt);
+  font-size: 1rem;
+}
+
+.hug-top {
+  margin-top: -0.5rem;
 }

@@ -1,3 +1,8 @@
+{% capture words %}{{ page.content | strip_html | number_of_words }}{% endcapture %}
+{% capture read_time_in_minutes %}{{ words | divided_by: 200 }}{% endcapture %}
+{% capture read_time_humanized %}{{ read_time_in_minutes | append: " min" }}{% endcapture %}
+{% if read_time_in_minutes != "1" %}{% assign read_time_humanized = read_time_humanized | append: "s" %}{% endif %}
+
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
   {% include head.html is_post=true %}
@@ -15,6 +20,13 @@
             </time>
           </span>
         </div>
+
+        {% if read_time_in_minutes != "0" %}
+        <div class="read-time text-meta-alt text-right hug-top">
+          <small>{{ read_time_humanized | append: " read" }}</small>
+        </div>
+        {% endif %}
+
       </header>
 
       {{ content }}
