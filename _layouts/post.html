@@ -1,5 +1,5 @@
-{% capture words %}{{ page.content | strip_html | number_of_words }}{% endcapture %}
-{% capture read_time_in_minutes %}{{ words | divided_by: 200 }}{% endcapture %}
+{% capture words %}{{ page.content | strip_html | number_of_words | times: 1.0 }}{% endcapture %}
+{% capture read_time_in_minutes %}{{ words | divided_by: 200 | round }}{% endcapture %}
 {% capture read_time_humanized %}{{ read_time_in_minutes | append: " min" }}{% endcapture %}
 {% if read_time_in_minutes != "1" %}{% assign read_time_humanized = read_time_humanized | append: "s" %}{% endif %}
 
@@ -22,7 +22,7 @@
         </div>
 
         {% if read_time_in_minutes != "0" %}
-        <div class="read-time text-meta-alt text-right hug-top">
+        <div class="read-time text-meta-alt text-right">
           <small>{{ read_time_humanized | append: " read" }}</small>
         </div>
         {% endif %}
