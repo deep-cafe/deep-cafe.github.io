@@ -1,0 +1,7 @@
+{% assign today_date = 'now' | date: site.date_format %} {% assign post_date =
+include.post.date | date: site.date_format %}
+
+<span class="{% if post_date == today_date %}today{% endif %}"
+  >{% if post_date == today_date %}Today{% else %}{{ post_date }}{% endif
+  %}</span
+>

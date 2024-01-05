@@ -11,20 +11,23 @@
           <section>
             <h2>{{ category | first | capitalize }}</h2>
 
-            <ul>
+            <ul class="post-list-items">
             {% for post in category.last %}
-              {% include post-teaser.html post=post %}
+              {% include post-list-item.html post=post %}
             {% endfor %}
             </ul>
           </section>
         </li>
       {% endfor %}
       </ul>
+
+      <br class="spacer" />
+
       {{ content }}
     </main>
 
     {% unless page.hide-footer %}
       {% include footer.html %}
     {% endunless %}
-  </body>
+ </body>
 </html>

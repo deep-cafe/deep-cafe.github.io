@@ -1,3 +1,8 @@
+{% capture words %}{{ page.content | strip_html | number_of_words | times: 1.0 }}{% endcapture %}
+{% capture read_time_in_minutes %}{{ words | divided_by: 200 | round }}{% endcapture %}
+{% capture read_time_humanized %}{{ read_time_in_minutes | append: " min" }}{% endcapture %}
+{% if read_time_in_minutes != "1" %}{% assign read_time_humanized = read_time_humanized | append: "s" %}{% endif %}
+
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
   {% include head.html is_post=true %}
@@ -11,10 +16,17 @@
         <div class="text-meta text-line-through">
           <span>
             <time datetime="{{ page.date }}" itemprop="datePublished">
-              {{ page.date | date: site.date_format }}
+              {% include post-date.html post=page %}
             </time>
           </span>
         </div>
+
+        {% if read_time_in_minutes != "0" %}
+        <div class="read-time text-meta-alt text-right">
+          <small>{{ read_time_humanized | append: " read" }}</small>
+        </div>
+        {% endif %}
+
       </header>
 
       {{ content }}
