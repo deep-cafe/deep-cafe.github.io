@@ -1,7 +1,4 @@
-{% capture words %}{{ page.content | strip_html | number_of_words | times: 1.0 }}{% endcapture %}
-{% capture read_time_in_minutes %}{{ words | divided_by: 200 | round }}{% endcapture %}
-{% capture read_time_humanized %}{{ read_time_in_minutes | append: " min" }}{% endcapture %}
-{% if read_time_in_minutes != "1" %}{% assign read_time_humanized = read_time_humanized | append: "s" %}{% endif %}
+{% capture read_time %}{{ page.content | strip_html | number_of_words | times: 1.0 | divided_by: 200 | round }}{% endcapture %}
 
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
@@ -21,9 +18,9 @@
           </span>
         </div>
 
-        {% if read_time_in_minutes != "0" %}
+        {% if read_time != "0" %}
         <div class="read-time text-meta-alt text-right">
-          <small>{{ read_time_humanized | append: " read" }}</small>
+          <small>{{ read_time | append: " min read" }}</small>
         </div>
         {% endif %}
       </header>
