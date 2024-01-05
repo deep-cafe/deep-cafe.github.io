@@ -11,7 +11,7 @@
           <section>
             <h2>{{ category | first | capitalize }}</h2>
 
-            <ul>
+            <ul class="post-list-items">
             {% for post in category.last %}
               {% include post-list-item.html post=post %}
             {% endfor %}
@@ -29,5 +29,5 @@
     {% unless page.hide-footer %}
       {% include footer.html %}
     {% endunless %}
-  </body>
+ </body>
 </html>

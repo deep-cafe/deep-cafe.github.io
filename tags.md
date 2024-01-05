@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Tags"
+published: false
 ---
 
 {% capture tags %}{% for tag in site.tags %}|{{ tag | first }}#{{ tag[1].size }}{% endfor %}{% endcapture %}
