@@ -7,4 +7,8 @@ url: https://www.deep.cafe
 
 permalink: /:categories/:title
 date_format: "%d %b %Y"
+month_date_format: "%b %Y"
 excerpt_separator: <!--more-->
+
+plugins:
+  - jekyll-loading-lazy

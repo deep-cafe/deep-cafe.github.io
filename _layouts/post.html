@@ -1,6 +1,8 @@
-{% unless page.categories contains "gallery" %}
-{% capture read_time %}{{ page.content | strip_html | number_of_words | times: 1.0 | divided_by: 200 | round }}{% endcapture %}
-{% endunless %}
+{% if page.categories contains "gallery" %}
+  {% capture images_count %}{{ page.content | split: '<img' | size | minus: 1 }}{% endcapture %}
+{% else %}
+  {% capture read_time %}{{ page.content | strip_html | number_of_words | times: 1.0 | divided_by: 200 | round }}{% endcapture %}
+{% endif %}
 
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
@@ -21,8 +23,12 @@
         </div>
 
         {% if read_time != nil and read_time != "0" %}
-        <div class="read-time text-meta-alt text-right">
+        <div class="content-size text-meta-alt text-right">
           <small>{{ read_time | append: " min read" }}</small>
+        </div>
+        {% elsif images_count != nil and images_count != "0" %}
+        <div class="content-size text-meta-alt text-right">
+          <small>{{ images_count | append: " images" }}</small>
         </div>
         {% endif %}
       </header>

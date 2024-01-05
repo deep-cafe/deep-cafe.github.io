@@ -3,7 +3,7 @@ layout: post
 title: "This is a cheeky draft"
 date: 2024-01-01
 categories: blog
-splash: /assets/images/sample.avif
+splash: /assets/images/blog/sample.avif
 tags:
   - foo
   - baz
@@ -30,7 +30,7 @@ Praesent rhoncus, nulla eu luctus vehicula, est felis egestas tortor, fermentum 
 
 Proin id lorem eget lectus finibus aliquam nec semper diam. Etiam mattis hendrerit efficitur. Cras quis ornare tortor, ac interdum eros. Donec dictum venenatis erat eget suscipit. Integer iaculis tortor magna, venenatis posuere mauris fermentum vitae. Nam sit amet cursus leo, vitae porttitor mi. Donec in tincidunt dolor. Proin id vestibulum tortor.
 
-![A picture of the ocean](/assets/images/sample.avif)
+![A picture of the ocean](/assets/images/blog/sample.avif)
 <footer><cite>Photo by John Doe at <a href="https://foo.com">foo</a></cite></footer>
 
 
