@@ -14,7 +14,10 @@
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="og:url" content="{{ page.url | absolute_url }}" />
     <meta property="og:description" content="{{ page.excerpt | strip_html }}" />
-    <!-- <meta property="og:image" content=""> -->
+
+    {% if page.splash %}
+      <meta property="og:image" content="{{ page.splash | absolute_url }}" />
+    {% endif %}
   {% endif %}
 
   <meta name="robots" content="index,follow,max-image-preview:large">

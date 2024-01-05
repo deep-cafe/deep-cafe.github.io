@@ -26,8 +26,11 @@
           <small>{{ read_time_humanized | append: " read" }}</small>
         </div>
         {% endif %}
-
       </header>
+
+      {% if page.splash %}
+        <img class="splash" src="{{ page.splash }}" alt="" />
+      {% endif %}
 
       {{ content }}
     </main>

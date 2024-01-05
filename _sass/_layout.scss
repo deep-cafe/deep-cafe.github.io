@@ -137,6 +137,10 @@
     line-height: 29px;
   }
 
+  p > img {
+    margin-top: 1rem;
+  }
+
   a {
     @extend .explicit-link;
   }
@@ -163,6 +167,10 @@
 
 .read-time {
   margin-top: -0.5rem;
+}
+
+.splash {
+  margin-bottom: 1.5rem;
 }
 
 .bottom-footer {
