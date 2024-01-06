@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "What I learned watching a high rise get built outside my apartment window"
-date: 2024-01-03
+date: 2024-01-05
 category: blog
 tags: foo bar
 ---

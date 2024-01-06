@@ -1,9 +1,10 @@
-{% if include.post.categories contains "gallery" %} {% assign date_format =
-site.month_date_format %} {% else %} {% assign date_format = site.date_format %}
-{% endif %} {% assign today_date = 'now' | date: site.date_format %} {% assign
-post_date = include.post.date | date: date_format %}
+{% if include.post.categories contains "gallery" %} {% assign
+displayed_date_format = site.month_date_format %} {% else %} {% assign
+displayed_date_format = site.date_format %} {% endif %} {% assign today_date =
+'now' | date: site.date_format %} {% assign post_date = include.post.date |
+date: site.date_format %}
 
 <span class="{% if post_date == today_date %}today{% endif %}"
-  >{% if post_date == today_date %}Today{% else %}{{ post_date }}{% endif
-  %}</span
+  >{% if post_date == today_date %}Today{% else %}{{ include.post.date | date:
+  displayed_date_format }}{% endif %}</span
 >

@@ -5,15 +5,17 @@
     {% include header.html %}
 
     <main class="container">
-      {% assign categories = site.categories | sort %}
-      {% for category in categories %}
+      <h1>{{ page.title }}</h1>
+
+      {% assign tags = site.tags | sort %}
+      {% for tag in tags %}
         <section>
-          <h2>{{ category | first | capitalize }}</h2>
+          <h2 class="text-line-through"><span>{{ tag[0] | capitalize }}&nbsp;<sup><small>({{ tag[1].size }})</small></sup></span></h2>
 
           <ul class="post-list-items">
-          {% for post in category.last %}
-            {% include post-list-item.html post=post %}
-          {% endfor %}
+            {% for post in tag[1] %}
+              {% include post-list-item.html post=post %}
+            {% endfor %}
           </ul>
         </section>
       {% endfor %}

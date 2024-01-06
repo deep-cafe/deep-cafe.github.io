@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "This is another one"
-date: 2024-01-05
+date: 2024-01-06
+tags: foo
 category: gallery
 image: /assets/images/gallery/london/000331980025.jpg 
 ---
