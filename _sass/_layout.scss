@@ -33,6 +33,12 @@
   }
 }
 
+.post-list-items {
+  @media (max-width: 820px) {
+    padding-top: 1.5rem;
+  }
+}
+
 .post-list-item {
   & + .post-list-item {
     margin-top: 0.5rem;
