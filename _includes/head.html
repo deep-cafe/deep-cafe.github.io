@@ -6,21 +6,28 @@
   <meta name="author" content="Deep Cafe">
   <meta name="description" content="{{ site.description }}">
 
-  {% if include.is_post %}
+  {% if page.layout == "post" %}
     <meta property="article:published_time" content="{{ page.date }}" />
     <meta property="article:author" content="Deep Cafe" />
     <meta property="og:site_name" content="Deep Cafe" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="og:url" content="{{ page.url | absolute_url }}" />
-    <meta property="og:description" content="{{ page.excerpt | strip_html }}" />
 
-    {% if page.splash %}
-      <meta property="og:image" content="{{ page.splash | absolute_url }}" />
+    {% unless page.categories contains "gallery" %}
+      <meta property="og:description" content="{{ page.excerpt | strip_html }}" />
+    {% endunless %}
+
+    {% if page.hero %}
+      <meta property="og:image" content="{{ page.hero | absolute_url }}" />
+    {% elsif page.image %}
+      <meta property="og:image" content="{{ page.image | absolute_url }}" />
     {% endif %}
   {% endif %}
 
   <meta name="robots" content="index,follow,max-image-preview:large">
+
+  {% feed_meta %}
 
   <title>{{ page.title }}</title>
 

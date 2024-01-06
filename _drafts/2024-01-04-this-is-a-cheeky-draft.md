@@ -2,12 +2,9 @@
 layout: post
 title: "This is a cheeky draft"
 date: 2024-01-01
-categories: blog
-splash: /assets/images/blog/sample.avif
-tags:
-  - foo
-  - baz
-  - health and exercise
+category: blog
+hero: /assets/images/blog/sample.avif
+tags: foo baz
 ---
 
 ## Subheading one

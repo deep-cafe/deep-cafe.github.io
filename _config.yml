@@ -1,3 +1,4 @@
+env: production
 title: Deep Cafe
 email: hello@deep.cafe
 description: "Powered by curiosity and gumption."
@@ -14,6 +15,9 @@ plugins:
   - jekyll-loading-lazy
   - jekyll-compress-images
   - jekyll-feed
+
+exclude:
+  - _compress_images_cache.yml
 
 compress_images:
   images_path: "assets/images/**/*.{gif,png,jpg,jpeg,svg,avif}"

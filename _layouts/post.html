@@ -6,7 +6,7 @@
 
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
-  {% include head.html is_post=true %}
+  {% include head.html %}
   <body>
     {% include header.html %}
 
@@ -33,8 +33,8 @@
         {% endif %}
       </header>
 
-      {% if page.splash %}
-        <img class="splash" src="{{ page.splash }}" alt="" />
+      {% if page.hero %}
+        <img class="hero" src="{{ page.hero }}" alt="" />
       {% endif %}
 
       {{ content }}

@@ -1,8 +1,9 @@
 ---
 layout: post
 title: "This is another one"
-date: 2024-01-03
-categories: gallery
+date: 2024-01-05
+category: gallery
+image: /assets/images/gallery/london/000331980025.jpg 
 ---
 
 ![1](/assets/images/gallery/london/000331980025.jpg)
