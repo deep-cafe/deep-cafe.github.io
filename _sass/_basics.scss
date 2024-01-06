@@ -25,11 +25,10 @@ body {
 }
 
 html {
-  font-size: 14px;
+  font-size: 16px;
 
-  @media (min-width: 576px) {
+  @media (min-width: 768px) {
     background: var(--color-background-alt);
-    font-size: 16px;
   }
 }
 
@@ -96,14 +95,14 @@ h6 {
 }
 
 a {
-  color: var(--color-tertiary);
+  color: var(--color-text);
   text-decoration: none;
   text-underline-offset: 4px;
   text-decoration-thickness: 0.5px !important;
 
   &:hover,
   &:focus {
-    color: var(--color-tertiary-alt);
+    color: var(--color-text-alt);
     text-decoration: underline;
   }
 }
