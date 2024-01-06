@@ -23,11 +23,11 @@
         </div>
 
         {% if read_time != nil and read_time != "0" %}
-        <div class="content-size text-meta-alt text-right">
+        <div class="content-size text-meta text-right">
           <small>{{ read_time | append: " min read" }}</small>
         </div>
         {% elsif images_count != nil and images_count != "0" %}
-        <div class="content-size text-meta-alt text-right">
+        <div class="content-size text-meta text-right">
           <small>{{ images_count | append: " images" }}</small>
         </div>
         {% endif %}
