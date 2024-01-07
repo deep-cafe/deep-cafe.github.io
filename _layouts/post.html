@@ -8,37 +8,57 @@
 <html lang="{{ site.lang | default: "en-US" }}">
   {% include head.html %}
   <body>
+    {% if page.draft %}
+      <div class="post-draft-banner">DRAFT</div>
+    {% endif %}
+
     {% include header.html %}
 
-    <main class="container post-content">
-      <header>
-        <h1>{{ page.title }}</h1>
+    <main class="post-content post-content-type-{{ page.categories | first | downcase | default: 'general' }} container">
+      <header class="post-content-header">
+        <h1 class="post-content-title">{{ page.title }}</h1>
 
         <div class="text-meta text-line-through">
-          <span>
-            <time datetime="{{ page.date }}" itemprop="datePublished">
-              {% include post-date.html post=page %}
-            </time>
+          <span class="post-content-date">
+            {% include post-date.html post=page %}
           </span>
         </div>
 
         {% if read_time != nil and read_time != "0" %}
-        <div class="content-size text-meta text-right">
+        <div class="post-content-size text-meta text-right">
           <small>{{ read_time | append: " min read" }}</small>
         </div>
         {% elsif images_count != nil and images_count != "0" %}
-        <div class="content-size text-meta text-right">
+        <div class="post-content-size text-meta text-right">
           <small>{{ images_count | append: " images" }}</small>
         </div>
         {% endif %}
       </header>
 
       {% if page.hero %}
-        <img class="hero" src="{{ page.hero }}" alt="" />
+        <img class="post-content-hero" src="{{ page.hero }}" alt="" />
       {% endif %}
 
-      {{ content }}
+      <div class="post-content-body">
+        {{ content }}
+      </div>
     </main>
+
+    <aside class="post-aside container">
+      {% if page.previous or page.next %}
+      <h3>Thanks for reading, here's more</h3>
+
+      <nav class="post-aside-links well">
+        {% if page.previous %}
+        <a class="post-aside-link post-aside-link-previous nav-link" href="{{ page.previous.url }}">{{ page.previous.title }}</a>
+        {% endif %}
+
+        {% if page.next %}
+        <a class="post-aside-link post-aside-link-next {% if page.previous %}post-aside-link-next-right{% endif %} nav-link" href="{{ page.next.url }}">{{ page.next.title }}</a>
+        {% endif %}
+      </nav>
+      {% endif %}
+    </aside>
 
     {% include footer.html %}
   </body>

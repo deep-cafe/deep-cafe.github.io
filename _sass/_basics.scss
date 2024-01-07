@@ -88,7 +88,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-size: 1rem;
+  font-size: 1.1875rem;
   margin-bottom: 1rem;
   line-height: 1;
   color: var(--color-secondary);
@@ -96,14 +96,12 @@ h6 {
 
 a {
   color: var(--color-text);
-  text-decoration: none;
-  text-underline-offset: 4px;
+  text-underline-offset: 2.5px;
   text-decoration-thickness: 0.5px !important;
 
   &:hover,
   &:focus {
     color: var(--color-text-alt);
-    text-decoration: underline;
   }
 }
 
@@ -120,7 +118,7 @@ ul.with-bullets {
   }
 
   li + li {
-    margin-top: 0.5rem;
+    margin-top: 0.75rem;
   }
 }
 

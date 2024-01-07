@@ -4,7 +4,11 @@ displayed_date_format = site.date_format %} {% endif %} {% assign today_date =
 'now' | date: site.date_format %} {% assign post_date = include.post.date |
 date: site.date_format %}
 
-<span class="{% if post_date == today_date %}today{% endif %}"
-  >{% if post_date == today_date %}Today{% else %}{{ include.post.date | date:
-  displayed_date_format }}{% endif %}</span
+<time
+  class="{% if post_date == today_date %}today{% endif %}"
+  datetime="{{ post.date }}"
+  itemprop="datePublished"
+>
+  {% if post_date == today_date %}Today{% else %}{{ include.post.date | date:
+  displayed_date_format }}{% endif %}</time
 >

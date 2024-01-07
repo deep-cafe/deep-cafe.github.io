@@ -10,11 +10,17 @@
 
   <div class="container space-between">
     <small>2024 · Powered by curiosity and gumption.</small>
-    <small><a class="nav-link muted" href="/feed.atom">Feed</a></small>
-    <small
-      ><a class="nav-link muted" href="mailto:hello@deep.cafe"
-        >{{ site.email }}</a
-      ></small
-    >
+    <div class="bottom-footer-contact">
+      <small
+        ><a class="nav-link muted" href="mailto:{{ site.email }}"
+          >{{ site.email }}</a
+        ></small
+      >
+      <small
+        ><a class="nav-link muted" href="{{ site.feed.path }}"
+          >Atom feed</a
+        ></small
+      >
+    </div>
   </div>
 </footer>

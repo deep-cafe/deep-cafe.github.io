@@ -2,7 +2,6 @@
 layout: post
 title: "This is another one"
 date: 2024-01-04
-category: blog
 tags: foo baz
 ---
 

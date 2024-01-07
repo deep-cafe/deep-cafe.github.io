@@ -1,8 +1,11 @@
-<li class="post-list-item">
+<li
+  class="post-list-item {% if include.post.draft %}post-list-item-draft{% endif %}"
+>
   <span class="post-list-item-body">
     <span class="post-list-item-date"
       >{% include post-date.html post=include.post %}</span
     >
+
     <span class="post-list-item-title"
       ><a href="{{ include.post.url }}">{{ include.post.title }}</a></span
     >
