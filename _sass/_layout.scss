@@ -167,6 +167,10 @@
 
     p > img {
       margin-top: 1rem;
+      background: var(--color-background-alt);
+      border-radius: 5px;
+      width: 100%;
+      height: auto;
     }
 
     a {
