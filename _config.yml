@@ -1,7 +1,7 @@
 env: production
 title: Deep Cafe
 email: hello@deep.cafe
-description: "Powered by curiosity and gumption."
+description: "Powered by curiosity."
 
 domain: deep.cafe
 url: https://www.deep.cafe
