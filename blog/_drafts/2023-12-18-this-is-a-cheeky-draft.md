@@ -2,7 +2,7 @@
 layout: post
 title: "This is a cheeky draft"
 date: 2023-12-18
-hero: /assets/images/blog/sample.avif
+hero: blog/sample.avif
 tags: foo baz
 ---
 

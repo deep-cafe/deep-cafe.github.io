@@ -5,3 +5,4 @@ _site
 .jekyll-metadata
 vendor
 _compress_images_cache.yml
+local-assets

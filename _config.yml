@@ -23,7 +23,7 @@ exclude:
   - _compress_images_cache.yml
 
 compress_images:
-  images_path: "assets/images/**/*.{gif,png,jpg,jpeg,svg,avif}"
+  images_path: "assets/images/**/*-final.{gif,png,jpg,jpeg,svg,avif}"
 
 feed:
   path: /feed.atom
