@@ -197,6 +197,14 @@
       font-size: 0.75rem;
     }
   }
+
+  &-type-gallery {
+    .post-content-body {
+      p:not(:first-child) img {
+        margin-top: 3rem;
+      }
+    }
+  }
 }
 
 .post-aside-links {
