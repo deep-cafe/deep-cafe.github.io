@@ -124,6 +124,11 @@
     align-items: center;
     gap: 1rem;
     padding-bottom: 0;
+
+    @media screen and (max-width: 400px) {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
   }
   #mlb2-10777169.ml-form-embedContainer
     .ml-form-embedWrapper
@@ -150,13 +155,8 @@
     .ml-form-embedWrapper
     .ml-form-embedBody
     .ml-form-embedContent
-    h4,
-  #mlb2-10777169.ml-form-embedContainer
-    .ml-form-embedWrapper
-    .ml-form-successBody
-    .ml-form-successContent
     h4 {
-    font-size: 0.75rem;
+    font-size: 0.86rem;
     line-height: 1;
     color: var(--color-gray-alt);
     text-align: left;
