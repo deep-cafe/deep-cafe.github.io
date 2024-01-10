@@ -199,8 +199,22 @@
   }
 
   &-type-gallery {
+    @media (min-width: 1100px) {
+      .post-content-body {
+        max-width: 1000px;
+        margin-left: -150px;
+        margin-right: -150px;
+
+        & > footer,
+        & > cite {
+          font-size: 0.9rem;
+        }
+      }
+    }
+
     .post-content-body {
-      p:not(:first-child) img {
+      p:not(:first-child) img,
+      p img + img {
         margin-top: 3rem;
       }
     }

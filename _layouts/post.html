@@ -1,5 +1,5 @@
-{% if page.categories contains "gallery" %}
-  {% capture images_count %}{{ page.content | split: '<img' | size | minus: 1 }}{% endcapture %}
+{% if page.categories contains "gallery" and page.images and page.images.size > 0 %}
+  {% capture images_count %}{{ page.images.size }}{% endcapture %}
 {% else %}
   {% capture read_time %}{{ page.content | strip_html | number_of_words | times: 1.0 | divided_by: 200 | round }}{% endcapture %}
 {% endif %}
@@ -36,10 +36,25 @@
       </header>
 
       {% if page.hero %}
-        <img class="post-content-hero" src="{{ page.hero }}" alt="" />
+        <img class="post-content-hero" src="/assets/images/{{ page.hero }}" alt="" />
       {% endif %}
 
       <div class="post-content-body">
+        {% if page.images %}
+          {% assign counter = 1 %}
+          {% for image in page.images %}
+            <p>
+              <img src="/assets/images/{{ image.url }}" alt="{{ counter }}" />
+              {% if image.txt %}
+                <footer><cite>{{ image.txt }}</cite></footer>
+              {% elsif page.draft %}
+                <footer><cite>{{ image.txt | default: image.url }}</cite></footer>
+              {% endif %}
+            </p>
+            {% assign counter = counter | plus: 1 %}
+          {% endfor %}
+        {% endif %}
+
         {{ content }}
       </div>
     </main>
