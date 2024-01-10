@@ -165,6 +165,18 @@
       line-height: 29px;
     }
 
+    sup {
+      font-size: 0.9rem;
+
+      &::before {
+        content: "(";
+      }
+
+      &::after {
+        content: ")";
+      }
+    }
+
     p > img {
       margin-top: 1rem;
       background: var(--color-background-alt);

@@ -6,3 +6,4 @@ _site
 vendor
 _compress_images_cache.yml
 local-assets
+originals

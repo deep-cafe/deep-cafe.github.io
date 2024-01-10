@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for f in $(find ./assets/images/gallery ! -name '*-final.jpg' ! -path '*/originals/*' -name '*.jpg');
+for f in $(find ./assets/images ! -name '*-final.jpg' ! -path '*/originals/*' -name '*.jpg');
 do
   echo "Compressing – $(basename $f)"
 
