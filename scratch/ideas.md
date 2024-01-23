@@ -54,5 +54,7 @@ Blog Ideas:
 - Things we are not taught in school
 - Mindless self indulgence
 
-Committed:
+Icebox:
 - rare historical photos — Fidel Castro @ Washington DC pre Cuban missile crisis
+
+Committed:
