@@ -21,7 +21,7 @@ images:
   - url: gallery/halifax/9-final.jpg
     txt: Pattern matching
   - url: gallery/halifax/10-final.jpg
-    txt: Stiches
+    txt: Stitches
   - url: gallery/halifax/11-final.jpg
     txt: Polar kayak
   - url: gallery/halifax/13-final.jpg
