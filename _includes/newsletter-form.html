@@ -157,7 +157,6 @@
     .ml-form-embedContent
     h4 {
     font-size: 0.86rem;
-    line-height: 1;
     color: var(--color-gray-alt);
     text-align: left;
     word-break: break-word;
@@ -1066,7 +1065,6 @@
     border-radius: 2px;
     border-width: 0;
     font-size: 0.75rem;
-    line-height: 1;
     margin-bottom: 0;
     margin-top: 0;
     padding: 3px 6px;
@@ -1079,11 +1077,11 @@
     .ml-form-embedBody
     .ml-form-horizontalRow
     button {
-    background-color: var(--color-background-alt);
+    background-color: var(--color-primary) !important;
+    color: var(--color-background);
     border: 0;
     border-radius: 4px;
     box-shadow: none;
-    color: var(--color-gray-alt);
     cursor: pointer;
     font-size: 0.75rem !important;
     line-height: 18px;
@@ -1197,11 +1195,11 @@
     .ml-form-embedBody
     .ml-form-embedSubmit
     button {
-    background-color: var(--color-background-alt);
+    background-color: var(--color-primary) !important;
+    color: var(--color-background);
     border: none !important;
     border-radius: 4px !important;
     box-shadow: none !important;
-    color: #ffffff !important;
     cursor: pointer;
     font-size: 0.75rem !important;
     font-weight: 700 !important;
@@ -1223,7 +1221,8 @@
     .ml-form-embedBody
     .ml-form-embedSubmit
     button:hover {
-    background-color: var(--color-background-alt);
+    background-color: var(--color-primary) !important;
+    color: var(--color-background);
   }
   .ml-subscribe-close {
     width: 30px;
@@ -1311,13 +1310,13 @@
   }
 
   #mlb2-10777169 .ml-mobileButton-horizontal button {
-    background-color: var(--color-background-alt);
     border-color: var(--color-background-alt);
+    background-color: var(--color-primary) !important;
+    color: var(--color-background);
     border-style: solid !important;
     border-width: 1px !important;
     border-radius: 4px !important;
     box-shadow: none !important;
-    color: var(--color-gray) !important;
     cursor: pointer;
     font-size: 0.75rem !important;
     line-height: 20px !important;
@@ -1369,10 +1368,6 @@
   <div class="ml-form-align-center">
     <div class="ml-form-embedWrapper embedForm">
       <div class="ml-form-embedBody ml-form-embedBodyHorizontal row-form">
-        <div class="ml-form-embedContent" style="">
-          <h4>Newsletter</h4>
-        </div>
-
         <form
           class="ml-block-form"
           action="https://assets.mailerlite.com/jsonp/760255/forms/109751976974091995/subscribe"
