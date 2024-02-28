@@ -5,6 +5,12 @@ date: 2024-01-11
 tag: reflection
 ---
 
+1. foo
+2. bar
+3. baz
+
+---
+
 - Sometimes people talk about "adulting"
   - the practice of behaving in a way characteristic of a responsible adult, especially the accomplishment of mundane but necessary tasks.
 

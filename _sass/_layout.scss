@@ -189,6 +189,15 @@
       height: auto;
     }
 
+    ul, ol {
+      list-style: revert;
+      padding-left: 1.05rem;
+
+      li {
+        padding-left: 0.5rem;
+      }
+    }
+
     a {
       color: var(--color-tertiary);
 
@@ -345,7 +354,7 @@
         cursor: pointer;
         user-select: none;
         text-align: right;
-        font-size: 0.86rem;
+        font-size: 0.9rem;
 
         span {
           padding-left: 0.25rem;
