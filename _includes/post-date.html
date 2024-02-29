@@ -8,7 +8,4 @@ date: site.date_format %}
   class="{% if post_date == today_date %}today{% endif %}"
   datetime="{{ post.date }}"
   itemprop="datePublished"
->
-  {% if post_date == today_date %}Today{% else %}{{ include.post.date | date:
-  displayed_date_format }}{% endif %}</time
->
+>{% if post_date == today_date %}Today{% else %}{{ include.post.date | date: displayed_date_format }}{% endif %}</time>
