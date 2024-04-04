@@ -3,7 +3,6 @@ layout: post
 title: "Toronto: Colour"
 date: 2019-12-01
 tag: film photography
-published: false
 images:
   - url: gallery/toronto/to-000031300002-final.jpg
   - url: gallery/toronto/to-000031300003-final.jpg
