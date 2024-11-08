@@ -1,5 +1,5 @@
 .top-header {
-  padding-top: 1rem;
+  padding-top: 1.5rem;
   padding-bottom: 2rem;
   font-size: 1.1875rem;
 
@@ -8,7 +8,7 @@
   }
 
   @media (min-width: 768px) {
-    padding-top: 2rem;
+    padding-top: 3rem;
   }
 }
 
@@ -83,7 +83,7 @@
           content: "DRAFT";
           display: block;
           position: absolute;
-          color: var(--color-primary);
+          color: var(--color-red);
           top: 52%;
           transform: translateY(-50%);
           right: calc(-42px - 1rem);
@@ -117,7 +117,7 @@
   left: 0;
   right: 0;
   height: 20px;
-  background: var(--color-primary);
+  background: var(--color-red);
   font-size: 13px;
   text-align: center;
   color: var(--color-background);
@@ -126,7 +126,7 @@
 }
 
 .post-content {
-  font-size: 1.1875rem;
+  font-size: 1rem;
   padding-bottom: 15rem;
 
   &::after {
@@ -135,7 +135,7 @@
     top: 6.5rem;
     left: 50%;
     transform: translateX(-50%);
-    width: 28px;
+    width: 31px;
     color: var(--color-background-alt-2);
   }
 
@@ -184,7 +184,7 @@
     p > img {
       margin-top: 1rem;
       background: var(--color-background-alt);
-      border-radius: 5px;
+      border-radius: 3px;
       width: 100%;
       height: auto;
     }

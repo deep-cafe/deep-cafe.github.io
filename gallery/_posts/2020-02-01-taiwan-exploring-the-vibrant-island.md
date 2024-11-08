@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Taiwan: Exploring formosa"
+title: "Taiwan: Exploring the vibrant island"
 date: 2020-02-01
 tag: digital photography
 images:
