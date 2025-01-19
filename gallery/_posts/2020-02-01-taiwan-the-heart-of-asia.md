@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Taiwan: Exploring the vibrant island"
+title: "Taiwan: The heart of Asia"
 date: 2020-02-01
 tag: digital photography
 images:

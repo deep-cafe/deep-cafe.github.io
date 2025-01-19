@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "London UK: Mind the gap"
+title: "London: Mind the gap"
 date: 2023-11-09
 tag: film photography
 images:
