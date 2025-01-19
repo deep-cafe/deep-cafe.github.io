@@ -6,6 +6,6 @@ gem "base64", "~> 0.2.0"
 
 group :jekyll_plugins do
   gem 'jekyll-loading-lazy'
-  gem 'jekyll-compress-images'
+  gem 'jekyll-compress-images', :git => 'https://github.com/valerijaspasojevic/jekyll-compress-images.git'
   gem 'jekyll-feed'
 end
