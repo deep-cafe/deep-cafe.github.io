@@ -9,7 +9,7 @@ do
     echo "Already exists – $(basename $newfilename)"
   else
     echo "Converting – $(basename $f)"
-    convert "$f" $newfilename
+    magick "$f" $newfilename
     trash $f
   fi
 done

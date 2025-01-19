@@ -43,15 +43,23 @@
         {% if page.images %}
           {% assign counter = 1 %}
           {% for image in page.images %}
-            <p>
-            <img src="/assets/images/{{ image.url }}" alt="{{ counter }}" style="{% if image.aspect_ratio %}aspect-ratio: {{ image.aspect_ratio }};{% endif %}" />
-              {% if image.txt %}
-                <footer><cite>{{ image.txt }}</cite></footer>
-              {% elsif page.draft %}
-                <footer><cite>{{ image.txt | default: image.url }}</cite></footer>
-              {% endif %}
-            </p>
-            {% assign counter = counter | plus: 1 %}
+            {% if image.xurl %}
+              {% continue %}
+            {% endif %}
+
+            {% if image.url %}
+              <p class="post-image-container">
+                <img class="post-image" src="/assets/images/{{ image.url }}" alt="{{ counter }}" style="{% if image.aspect_ratio %}aspect-ratio: {{ image.aspect_ratio }};{% endif %}" />
+                {% if image.txt %}
+                  <footer class="post-image-footer"><cite>{{ image.txt }}</cite></footer>
+                {% elsif page.draft %}
+                  <footer class="post-image-footer"><cite>{{ image.txt | default: image.url }}</cite></footer>
+                {% endif %}
+              </p>
+              {% assign counter = counter | plus: 1 %}
+            {% else %}
+              <hr class="post-image-separator" />
+            {% endif %}
           {% endfor %}
         {% endif %}
 

@@ -4,7 +4,7 @@ for f in $(find ./assets/images ! -name '*-final.jpg' ! -path '*/originals/*' -n
 do
   echo "Compressing – $(basename $f)"
 
-  convert $f -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -resize 2000\> "$(realpath $f | sed "s/\.jpg$//")-final.jpg"
+  magick $f -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -resize 2000\> "$(realpath $f | sed "s/\.jpg$//")-final.jpg"
 
   originals=$(dirname $f)/originals
 
