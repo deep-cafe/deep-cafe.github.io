@@ -164,7 +164,8 @@
       padding-top: 1rem;
     }
 
-    & > p {
+    & > p,
+    & > figure {
       margin-bottom: 1.5rem;
       line-height: 29px;
     }
@@ -181,7 +182,8 @@
       }
     }
 
-    p > img {
+    p > img,
+    figure > img {
       margin-top: 1rem;
       background: var(--color-background-alt);
       border-radius: 3px;
@@ -212,9 +214,9 @@
       border-radius: 5px;
     }
 
+    figcaption,
     & > footer,
     & > cite {
-      margin-top: -1.25rem;
       margin-bottom: 1.5rem;
       padding-right: 0.25rem;
       text-align: right;
@@ -230,6 +232,7 @@
         margin-left: -150px;
         margin-right: -150px;
 
+        & > figure,
         & > footer,
         & > cite {
           font-size: 0.9rem;
@@ -239,7 +242,9 @@
 
     .post-content-body {
       p:not(:first-child) img,
-      p img + img {
+      p img + img,
+      figure:not(:first-child) img,
+      figure img + img {
         margin-top: 3rem;
       }
     }

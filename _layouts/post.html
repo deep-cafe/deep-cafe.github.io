@@ -48,14 +48,14 @@
             {% endif %}
 
             {% if image.url %}
-              <p class="post-image-container">
+              <figure class="post-image-container">
                 <img class="post-image" src="/assets/images/{{ image.url }}" alt="{{ counter }}" style="{% if image.aspect_ratio %}aspect-ratio: {{ image.aspect_ratio }};{% endif %}" />
                 {% if image.txt %}
-                  <footer class="post-image-footer"><cite>{{ image.txt }}</cite></footer>
+                  <figcaption class="post-image-footer">{{ image.txt }}</figcaption>
                 {% elsif page.draft %}
-                  <footer class="post-image-footer"><cite>{{ image.txt | default: image.url }}</cite></footer>
+                  <figcaption class="post-image-footer">{{ image.txt | default: image.url }}</figcaption>
                 {% endif %}
-              </p>
+              </figure>
               {% assign counter = counter | plus: 1 %}
             {% else %}
               <hr class="post-image-separator" />
