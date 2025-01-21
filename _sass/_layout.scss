@@ -166,7 +166,6 @@
 
     & > p,
     & > figure {
-      margin-bottom: 1.5rem;
       line-height: 29px;
     }
 
@@ -183,12 +182,16 @@
     }
 
     p > img,
-    figure > img {
+    figure img {
       margin-top: 1rem;
       background: var(--color-background-alt);
       border-radius: 3px;
       width: 100%;
       height: auto;
+
+      @media (min-width: 768px) {
+        margin-top: 1.5rem;
+      }
     }
 
     ul, ol {
@@ -218,10 +221,15 @@
     & > footer,
     & > cite {
       margin-bottom: 1.5rem;
+      padding-top: 0.25rem;
       padding-right: 0.25rem;
       text-align: right;
       color: var(--color-gray);
       font-size: 0.75rem;
+
+      @media (min-width: 768px) {
+        font-size: 0.9rem;
+      }
     }
   }
 
@@ -242,9 +250,7 @@
 
     .post-content-body {
       p:not(:first-child) img,
-      p img + img,
-      figure:not(:first-child) img,
-      figure img + img {
+      p img + img {
         margin-top: 3rem;
       }
     }

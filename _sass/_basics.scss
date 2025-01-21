@@ -125,6 +125,18 @@ ul.with-bullets {
   }
 }
 
+figure {
+  overflow: hidden;
+
+  & + figure {
+    margin-top: 0.25rem;
+
+    @media (min-width: 768px) {
+      margin-top: 1rem;
+    }
+  }
+}
+
 blockquote {
   margin-bottom: 1.5rem;
   line-height: 29px;
