@@ -126,14 +126,26 @@ ul.with-bullets {
 }
 
 figure {
-  overflow: hidden;
+  margin-bottom: 1.5rem;
+  padding-top: 1rem;
 
-  & + figure {
-    margin-top: 0.25rem;
+  @media screen and (min-width: 768px) {
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+  }
 
-    @media (min-width: 768px) {
-      margin-top: 1rem;
-    }
+  @media screen and (min-width: 1500px) {
+    padding-top: 2rem;
+    padding-bottom: 2.5rem;
+  }
+}
+
+figcaption {
+  padding-top: 0.25rem;
+  line-height: 1.5;
+
+  @media screen and (min-width: 768px) {
+    line-height: 2;
   }
 }
 
@@ -163,7 +175,6 @@ blockquote {
     }
   }
 
-  & > figcaption,
   & > footer,
   & > cite {
     padding-left: 1.75rem;

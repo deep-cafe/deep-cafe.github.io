@@ -49,8 +49,8 @@
 
             {% if image.url %}
                 <figure id="image-{{ counter }}" class="post-image-container">
-                  <a href="#image-{{ counter }}">
-                    <img class="post-image" src="/assets/images/{{ image.url }}" alt="{{ counter }}" style="{% if image.aspect_ratio %}aspect-ratio: {{ image.aspect_ratio }};{% endif %}" />
+                  <a href="#image-{{ counter }}" class="post-image-link">
+                    <img class="post-image" src="/assets/images/{{ image.url }}" alt="{{ image.txt | default: '' }}" style="{% if image.aspect_ratio %}aspect-ratio: {{ image.aspect_ratio }};{% endif %}" />
                   </a>
                   {% if image.txt %}
                     <figcaption class="post-image-footer">{{ image.txt }}</figcaption>
@@ -73,7 +73,9 @@
       {% if page.previous or page.next %}
       <h4>Thanks for reading, here's more</h4>
 
-      <nav class="post-aside-links well">
+      <nav class="post-aside-links well" aria-labelledby="postmenulabel">
+        <h5 id="postmenulabel" class="visually-hidden">Post Menu</h5>
+
         {% if page.previous %}
         <a class="post-aside-link post-aside-link-previous nav-link" href="{{ page.previous.url }}">{{ page.previous.title }}</a>
         {% endif %}

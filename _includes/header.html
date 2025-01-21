@@ -5,7 +5,9 @@
       <a class="top-logo-link" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
     </div>
 
-    <nav>
+    <nav aria-labelledby="mainmenulabel">
+      <h2 id="mainmenulabel" class="visually-hidden">Main Menu</h2>
+
       <ul>
         {% unless page.layout == "home" %}
         <li><a class="nav-link" href="{{ "/" | relative_url }}">Home</a></li>
