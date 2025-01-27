@@ -21,7 +21,7 @@
     {% if page.hero %}
       <meta property="og:image" content="{{ page.hero | absolute_url }}" />
     {% elsif page.images and page.images.size > 0 %}
-      <meta property="og:image" content="{{ page.images[0].url | absolute_url }}" />
+      <meta property="og:image" content="{{ "/assets/images/" | append: page.images[0].url | absolute_url }}" />
     {% endif %}
   {% endif %}
 
